@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarseActivity">
+
+    <ImageView
+        android:id="@+id/foto_user_IV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@drawable/selimg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Input_contra"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/azul_fuerte9"
+        app:boxStrokeColor="@color/white"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/RED"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/key_ingreso_white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_contra"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Contraseña"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Input_correo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/azul_fuerte9"
+        app:boxStrokeColor="@color/white"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/RED"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Input_contra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_nombre"
+        app:startIconDrawable="@drawable/email_ingreso">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_correo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Correo"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="40"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Input_nombre"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/azul_fuerte9"
+        app:boxStrokeColor="@color/white"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/RED"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
+        app:startIconDrawable="@drawable/person_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Nombre"
+            android:imeOptions="actionDone"
+            android:maxLength="30"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Input_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="364dp"
+        android:layout_height="75dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/azul_fuerte9"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/white"
+        app:errorTextColor="@color/RED"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:startIconDrawable="@drawable/ic_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Usurario"
+            android:imeOptions="actionDone"
+            app:errorEnabled="true"
+            android:maxLength="20"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner_escuela"
+        android:layout_width="359dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_contra"
+        app:layout_constraintVertical_bias="0.19"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_regis_usu"
+        android:layout_width="236dp"
+        android:layout_height="61dp"
+        android:background="@drawable/boton_ingresar"
+        android:text="REGISTRAR USUARIO"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_escuela"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/textEscuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escuela"
+        android:textColor="@color/azul_fuerte9"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_escuela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_contra"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

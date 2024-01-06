@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TRADING APP</string>
+    <string name="prefs_file">com.example.escomercio.PREFERENCE_FILE_KEY</string>
+</resources>
